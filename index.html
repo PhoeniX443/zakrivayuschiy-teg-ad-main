@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Закрывающий тег</title>
+  <!-- Шрифты, переменные, глобальные стили, основные стили и анимации -->
+  <link rel="stylesheet" href="./fonts/fonts.css" />
+  <link rel="stylesheet" href="./styles/variables.css" />
+  <link rel="stylesheet" href="./styles/globals.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/animations.css" />
+  <!-- Фавиконки -->
+  <link rel="icon" href="images/favicon.ico" sizes="any" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="images/favicon-180.png" />
+</head>
+<body class="page">
+  <header class="header">
+    <div class="header__container">
+      <!-- Заголовок первого уровня (единственный на странице) -->
+      <h1 class="header__logo">
+        <a href="#">&lt;Закрывающий тег&gt;</a>
+      </h1>
+      <p class="header__subtitle">или как упорядочить хаос</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- Карточка 1 -->
+    <article class="card">
+      <h2 class="card__title">Глава 1: Введение</h2>
+      <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/photo-1.jpg"
+          alt="Ноутбук с открытым редактором кода"
+          loading="lazy"
+        />
+        <p class="card__label">Легко</p>
+      </div>
+      <div class="card__content">
+        <p class="card__text">Начало было слишком лёгким. Это же ведь только глава «Введение». Я подумал: «Да это же элементарно!» — и расслабился. Зря.</p>
+      </div>
+      <div class="card__buttons">
+        <button class="card__icon-button" type="button">
+          <!-- Инлайновый SVG сердца с классами для анимации -->
+          <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
+            <g class="heart">
+              <path
+                class="contour"
+                d="M12 6H9v3h3V6Z M15 9h-3v3h3V9Z M12 12h-3v3h3v-3Z M9 15H6v3h3v-3Z M6 12H3v3h3v-3Z M3 9H0v3h3V9Z M6 6H3v3h3V6Z M9 3H6v3h3V3Z M12 0H9v3h3V0Z"
+                fill="var(--contour-color, #000)" />
+              <path
+                class="main-body"
+                d="M12 3h3v3h-3V3Z M15 6h3v3h-3V6Z M18 9h3v3h-3V9Z M18 12h3v3h-3v-3Z M15 15h3v3h-3v-3Z M12 18h3v3h-3v-3Z M9 18h3v3H9v-3Z M6 15h3v3H6v-3Z M3 12h3v3H3v-3Z"
+                fill="none" />
+              <path
+                class="core"
+                d="M9 9h3v3H9V9Z"
+                fill="none" />
+            </g>
+            <path
+              class="sparks"
+              d="M21 9h3v3h-3V9Z M24 12h3v3h-3v-3Z M24 6h3v3h-3V6Z"
+              fill="var(--animation-fill-color, #f00)"
+              opacity="0" />
+          </svg>
+        </button>
+        <!-- ДОБАВЛЕНА КНОПКА LIKE -->
+        <button class="card__like-button" type="button">
+          <span class="button__text">Like</span>
+        </button>
+        <button class="card__save-button" type="button">
+          <svg class="save-icon" width="21" height="21" viewBox="0 0 21 21">
+            <use xlink:href="images/icons.svg#disketa"></use>
+          </svg>
+          <span class="button__text">Сохранить на память</span>
+        </button>
+      </div>
+    </article>
+
+    <!-- Карточка 2 -->
+    <article class="card">
+      <h2 class="card__title">Глава 2: Основы HTML</h2>
+      <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/photo-2.jpg"
+          alt="Блокнот с записями тегов"
+          loading="lazy"
+        />
+        <p class="card__label">Привычка</p>
+      </div>
+      <div class="card__content">
+        <p class="card__text">Вторая глава относительно простенькая. Просто привыкал к этому проекту, разбирался с тегами и атрибутами.</p>
+      </div>
+      <div class="card__buttons">
+        <button class="card__icon-button" type="button">
+          <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
+            <g class="heart">
+              <path class="contour" d="M12 6H9v3h3V6Z M15 9h-3v3h3V9Z M12 12h-3v3h3v-3Z M9 15H6v3h3v-3Z M6 12H3v3h3v-3Z M3 9H0v3h3V9Z M6 6H3v3h3V6Z M9 3H6v3h3V3Z M12 0H9v3h3V0Z" fill="var(--contour-color, #000)" />
+              <path class="main-body" d="M12 3h3v3h-3V3Z M15 6h3v3h-3V6Z M18 9h3v3h-3V9Z M18 12h3v3h-3v-3Z M15 15h3v3h-3v-3Z M12 18h3v3h-3v-3Z M9 18h3v3H9v-3Z M6 15h3v3H6v-3Z M3 12h3v3H3v-3Z" fill="none" />
+              <path class="core" d="M9 9h3v3H9V9Z" fill="none" />
+            </g>
+            <path class="sparks" d="M21 9h3v3h-3V9Z M24 12h3v3h-3v-3Z M24 6h3v3h-3V6Z" fill="var(--animation-fill-color, #f00)" opacity="0" />
+          </svg>
+        </button>
+        <!-- ДОБАВЛЕНА КНОПКА LIKE -->
+        <button class="card__like-button" type="button">
+          <span class="button__text">Like</span>
+        </button>
+        <button class="card__save-button" type="button">
+          <svg class="save-icon" width="21" height="21" viewBox="0 0 21 21">
+            <use xlink:href="images/icons.svg#disketa"></use>
+          </svg>
+          <span class="button__text">Сохранить на память</span>
+        </button>
+      </div>
+    </article>
+
+    <!-- Карточка 3 -->
+    <article class="card">
+      <h2 class="card__title">Глава 3: Стилизация</h2>
+      <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/photo-3.jpg"
+          alt="Цветные квадраты CSS"
+          loading="lazy"
+        />
+        <p class="card__label">Интерес</p>
+      </div>
+      <div class="card__content">
+        <p class="card__text">Я уже привык к этому курсу. Вроде ничего сложного нет, даже понравилось подбирать цвета и шрифты.</p>
+      </div>
+      <div class="card__buttons">
+        <button class="card__icon-button" type="button">
+          <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
+            <g class="heart">
+              <path class="contour" d="M12 6H9v3h3V6Z M15 9h-3v3h3V9Z M12 12h-3v3h3v-3Z M9 15H6v3h3v-3Z M6 12H3v3h3v-3Z M3 9H0v3h3V9Z M6 6H3v3h3V6Z M9 3H6v3h3V3Z M12 0H9v3h3V0Z" fill="var(--contour-color, #000)" />
+              <path class="main-body" d="M12 3h3v3h-3V3Z M15 6h3v3h-3V6Z M18 9h3v3h-3V9Z M18 12h3v3h-3v-3Z M15 15h3v3h-3v-3Z M12 18h3v3h-3v-3Z M9 18h3v3H9v-3Z M6 15h3v3H6v-3Z M3 12h3v3H3v-3Z" fill="none" />
+              <path class="core" d="M9 9h3v3H9V9Z" fill="none" />
+            </g>
+            <path class="sparks" d="M21 9h3v3h-3V9Z M24 12h3v3h-3v-3Z M24 6h3v3h-3V6Z" fill="var(--animation-fill-color, #f00)" opacity="0" />
+          </svg>
+        </button>
+        <!-- ДОБАВЛЕНА КНОПКА LIKE -->
+        <button class="card__like-button" type="button">
+          <span class="button__text">Like</span>
+        </button>
+        <button class="card__save-button" type="button">
+          <svg class="save-icon" width="21" height="21" viewBox="0 0 21 21">
+            <use xlink:href="images/icons.svg#disketa"></use>
+          </svg>
+          <span class="button__text">Сохранить на память</span>
+        </button>
+      </div>
+    </article>
+
+    <!-- Карточка 4 -->
+    <article class="card">
+      <h2 class="card__title">Глава 4: Первая проектная</h2>
+      <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/photo-4.jpg"
+          alt="Взлохмаченный человек перед монитором"
+          loading="lazy"
+        />
+        <p class="card__label">Страх</p>
+      </div>
+      <div class="card__content">
+        <p class="card__text">О боже, моя первая проектная работа! Вот это нервотрёпка. Я перепроверял каждый тег, боялся, что всё сломается.</p>
+      </div>
+      <div class="card__buttons">
+        <button class="card__icon-button" type="button">
+          <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
+            <g class="heart">
+              <path class="contour" d="M12 6H9v3h3V6Z M15 9h-3v3h3V9Z M12 12h-3v3h3v-3Z M9 15H6v3h3v-3Z M6 12H3v3h3v-3Z M3 9H0v3h3V9Z M6 6H3v3h3V6Z M9 3H6v3h3V3Z M12 0H9v3h3V0Z" fill="var(--contour-color, #000)" />
+              <path class="main-body" d="M12 3h3v3h-3V3Z M15 6h3v3h-3V6Z M18 9h3v3h-3V9Z M18 12h3v3h-3v-3Z M15 15h3v3h-3v-3Z M12 18h3v3h-3v-3Z M9 18h3v3H9v-3Z M6 15h3v3H6v-3Z M3 12h3v3H3v-3Z" fill="none" />
+              <path class="core" d="M9 9h3v3H9V9Z" fill="none" />
+            </g>
+            <path class="sparks" d="M21 9h3v3h-3V9Z M24 12h3v3h-3v-3Z M24 6h3v3h-3V6Z" fill="var(--animation-fill-color, #f00)" opacity="0" />
+          </svg>
+        </button>
+        <!-- ДОБАВЛЕНА КНОПКА LIKE -->
+        <button class="card__like-button" type="button">
+          <span class="button__text">Like</span>
+        </button>
+        <button class="card__save-button" type="button">
+          <svg class="save-icon" width="21" height="21" viewBox="0 0 21 21">
+            <use xlink:href="images/icons.svg#disketa"></use>
+          </svg>
+          <span class="button__text">Сохранить на память</span>
+        </button>
+      </div>
+    </article>
+
+    <!-- Карточка 5 -->
+    <article class="card">
+      <h2 class="card__title">Глава 5: Адаптив</h2>
+      <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/photo-5.jpg"
+          alt="Разные экраны устройств"
+          loading="lazy"
+        />
+        <p class="card__label">Уверенность</p>
+      </div>
+      <div class="card__content">
+        <p class="card__text">Ладно, с первой справился, двигаюсь дальше. Адаптивная вёрстка оказалась даже увлекательной — словно играешь в тетрис с размерами.</p>
+      </div>
+      <div class="card__buttons">
+        <button class="card__icon-button" type="button">
+          <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
+            <g class="heart">
+              <path class="contour" d="M12 6H9v3h3V6Z M15 9h-3v3h3V9Z M12 12h-3v3h3v-3Z M9 15H6v3h3v-3Z M6 12H3v3h3v-3Z M3 9H0v3h3V9Z M6 6H3v3h3V6Z M9 3H6v3h3V3Z M12 0H9v3h3V0Z" fill="var(--contour-color, #000)" />
+              <path class="main-body" d="M12 3h3v3h-3V3Z M15 6h3v3h-3V6Z M18 9h3v3h-3V9Z M18 12h3v3h-3v-3Z M15 15h3v3h-3v-3Z M12 18h3v3h-3v-3Z M9 18h3v3H9v-3Z M6 15h3v3H6v-3Z M3 12h3v3H3v-3Z" fill="none" />
+              <path class="core" d="M9 9h3v3H9V9Z" fill="none" />
+            </g>
+            <path class="sparks" d="M21 9h3v3h-3V9Z M24 12h3v3h-3v-3Z M24 6h3v3h-3V6Z" fill="var(--animation-fill-color, #f00)" opacity="0" />
+          </svg>
+        </button>
+        <!-- ДОБАВЛЕНА КНОПКА LIKE -->
+        <button class="card__like-button" type="button">
+          <span class="button__text">Like</span>
+        </button>
+        <button class="card__save-button" type="button">
+          <svg class="save-icon" width="21" height="21" viewBox="0 0 21 21">
+            <use xlink:href="images/icons.svg#disketa"></use>
+          </svg>
+          <span class="button__text">Сохранить на память</span>
+        </button>
+      </div>
+    </article>
+
+    <!-- Карточка 6 -->
+    <article class="card">
+      <h2 class="card__title">Глава 6: Второй проект</h2>
+      <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/photo-6.jpg"
+          alt="Стопка книг по веб-разработке"
+          loading="lazy"
+        />
+        <p class="card__label">Спокойствие</p>
+      </div>
+      <div class="card__content">
+        <p class="card__text">Ещё одна проектная работа. Я уже знал, что делать, и просто методично выполнял задание. Без паники.</p>
+      </div>
+      <div class="card__buttons">
+        <button class="card__icon-button" type="button">
+          <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
+            <g class="heart">
+              <path class="contour" d="M12 6H9v3h3V6Z M15 9h-3v3h3V9Z M12 12h-3v3h3v-3Z M9 15H6v3h3v-3Z M6 12H3v3h3v-3Z M3 9H0v3h3V9Z M6 6H3v3h3V6Z M9 3H6v3h3V3Z M12 0H9v3h3V0Z" fill="var(--contour-color, #000)" />
+              <path class="main-body" d="M12 3h3v3h-3V3Z M15 6h3v3h-3V6Z M18 9h3v3h-3V9Z M18 12h3v3h-3v-3Z M15 15h3v3h-3v-3Z M12 18h3v3h-3v-3Z M9 18h3v3H9v-3Z M6 15h3v3H6v-3Z M3 12h3v3H3v-3Z" fill="none" />
+              <path class="core" d="M9 9h3v3H9V9Z" fill="none" />
+            </g>
+            <path class="sparks" d="M21 9h3v3h-3V9Z M24 12h3v3h-3v-3Z M24 6h3v3h-3V6Z" fill="var(--animation-fill-color, #f00)" opacity="0" />
+          </svg>
+        </button>
+        <!-- ДОБАВЛЕНА КНОПКА LIKE -->
+        <button class="card__like-button" type="button">
+          <span class="button__text">Like</span>
+        </button>
+        <button class="card__save-button" type="button">
+          <svg class="save-icon" width="21" height="21" viewBox="0 0 21 21">
+            <use xlink:href="images/icons.svg#disketa"></use>
+          </svg>
+          <span class="button__text">Сохранить на память</span>
+        </button>
+      </div>
+    </article>
+
+    <!-- Карточка 7 -->
+    <article class="card">
+      <h2 class="card__title">Глава 7: Анимации</h2>
+      <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/photo-7.jpg"
+          alt="Гифка с движущимися элементами"
+          loading="lazy"
+        />
+        <p class="card__label">Восторг</p>
+      </div>
+      <div class="card__content">
+        <p class="card__text">Предпоследняя глава перед финалом. Анимации оказались сложными, но когда сердечко ожило — я чуть не закричал от радости!</p>
+      </div>
+      <div class="card__buttons">
+        <button class="card__icon-button" type="button">
+          <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
+            <g class="heart">
+              <path class="contour" d="M12 6H9v3h3V6Z M15 9h-3v3h3V9Z M12 12h-3v3h3v-3Z M9 15H6v3h3v-3Z M6 12H3v3h3v-3Z M3 9H0v3h3V9Z M6 6H3v3h3V6Z M9 3H6v3h3V3Z M12 0H9v3h3V0Z" fill="var(--contour-color, #000)" />
+              <path class="main-body" d="M12 3h3v3h-3V3Z M15 6h3v3h-3V6Z M18 9h3v3h-3V9Z M18 12h3v3h-3v-3Z M15 15h3v3h-3v-3Z M12 18h3v3h-3v-3Z M9 18h3v3H9v-3Z M6 15h3v3H6v-3Z M3 12h3v3H3v-3Z" fill="none" />
+              <path class="core" d="M9 9h3v3H9V9Z" fill="none" />
+            </g>
+            <path class="sparks" d="M21 9h3v3h-3V9Z M24 12h3v3h-3v-3Z M24 6h3v3h-3V6Z" fill="var(--animation-fill-color, #f00)" opacity="0" />
+          </svg>
+        </button>
+        <!-- ДОБАВЛЕНА КНОПКА LIKE -->
+        <button class="card__like-button" type="button">
+          <span class="button__text">Like</span>
+        </button>
+        <button class="card__save-button" type="button">
+          <svg class="save-icon" width="21" height="21" viewBox="0 0 21 21">
+            <use xlink:href="images/icons.svg#disketa"></use>
+          </svg>
+          <span class="button__text">Сохранить на память</span>
+        </button>
+      </div>
+    </article>
+
+    <!-- Карточка 8 -->
+    <article class="card">
+      <h2 class="card__title">Финальный проект</h2>
+      <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/photo-8.jpg"
+          alt="Человек с победным жестом перед компьютером"
+          loading="lazy"
+        />
+        <p class="card__label">Гордость</p>
+      </div>
+      <div class="card__content">
+        <p class="card__text">Наконец я дошёл до него. Столько всего позади. Чувствую усталость, но и невероятную гордость — я справился!</p>
+      </div>
+      <div class="card__buttons">
+        <button class="card__icon-button" type="button">
+          <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
+            <g class="heart">
+              <path class="contour" d="M12 6H9v3h3V6Z M15 9h-3v3h3V9Z M12 12h-3v3h3v-3Z M9 15H6v3h3v-3Z M6 12H3v3h3v-3Z M3 9H0v3h3V9Z M6 6H3v3h3V6Z M9 3H6v3h3V3Z M12 0H9v3h3V0Z" fill="var(--contour-color, #000)" />
+              <path class="main-body" d="M12 3h3v3h-3V3Z M15 6h3v3h-3V6Z M18 9h3v3h-3V9Z M18 12h3v3h-3v-3Z M15 15h3v3h-3v-3Z M12 18h3v3h-3v-3Z M9 18h3v3H9v-3Z M6 15h3v3H6v-3Z M3 12h3v3H3v-3Z" fill="none" />
+              <path class="core" d="M9 9h3v3H9V9Z" fill="none" />
+            </g>
+            <path class="sparks" d="M21 9h3v3h-3V9Z M24 12h3v3h-3v-3Z M24 6h3v3h-3V6Z" fill="var(--animation-fill-color, #f00)" opacity="0" />
+          </svg>
+        </button>
+        <!-- ДОБАВЛЕНА КНОПКА LIKE -->
+        <button class="card__like-button" type="button">
+          <span class="button__text">Like</span>
+        </button>
+        <button class="card__save-button" type="button">
+          <svg class="save-icon" width="21" height="21" viewBox="0 0 21 21">
+            <use xlink:href="images/icons.svg#disketa"></use>
+          </svg>
+          <span class="button__text">Сохранить на память</span>
+        </button>
+      </div>
+    </article>
+  </main>
+
+  <!-- Модальное окно -->
+  <dialog class="modal" id="save-modal">
+    <form class="modal__form" method="dialog">
+      <div class="modal__content">
+        <svg class="modal__icon" width="39" height="39" viewBox="0 0 39 39">
+          <use xlink:href="images/icons.svg#disketa"></use>
+        </svg>
+        <p class="modal__text">Запись сохранена!</p>
+      </div>
+      <button class="modal__close-button" type="submit">
+        <span class="button__text">ОК</span>
+      </button>
+    </form>
+  </dialog>
+
+  <!-- Единый скрипт (лайки + модальное окно) -->
+  <script src="./scripts/like.js"></script>
+</body>
+</html>
