@@ -1,1 +1,0 @@
-# zakrivayuschiy-teg-ad-main
